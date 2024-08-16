@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import { AuthProvider } from './providers/AuthProvider';
 import Login from './components/Login';
 import Register from './components/Register';
+import PrivateRoute from './routes/PrivateRoute';
 
 function App() {
   return (
@@ -14,7 +15,14 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<ProductList />} />
+          <Route
+            path="/products"
+            element={
+              <PrivateRoute>
+                <ProductList />
+              </PrivateRoute>
+            }
+          />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
