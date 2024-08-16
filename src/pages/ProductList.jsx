@@ -22,7 +22,7 @@ const ProductList = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/products', { params: filters });
+                const response = await axios.get('https://filter-flow-server.vercel.app/products', { params: filters });
                 const { products, totalPages } = response.data;
                 setProducts(products);
                 setTotalPages(totalPages);
