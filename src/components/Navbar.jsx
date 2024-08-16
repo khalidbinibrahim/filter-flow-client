@@ -8,9 +8,12 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div className='flex gap-1 items-center'>
+          <img className='h-14' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ5vo7cm3cBFmnvKET2CmDB6bsbNf67u8VuQ&s" alt="filter-flow" />
         <Link to="/" className="text-blue-600 text-2xl font-bold font-poppins">
           FilterFlow
         </Link>
+        </div>
         <div className="flex space-x-6 items-center">
           <Link
             to="/"
