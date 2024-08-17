@@ -36,7 +36,7 @@ FilterFlow is a modern, responsive web application built with React and Tailwind
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/khalidbinibrahim01/filterflow-client.git
-   cd filter-flow-client
+   cd filterflow-client
 
 2. **Clone the .env.example:**
    ```bash
